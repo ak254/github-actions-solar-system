@@ -55,7 +55,7 @@ jobs:
 
         - name: Run Coverage
           if: always()
-          uses: npm run code-coverage
+          run: npm run code-coverage
           
         - name: Code-Coverage-Result
           uses: actions/upload-artifact
